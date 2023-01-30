@@ -11,7 +11,7 @@ drivers know that the InfoTech Center 4.0 OS is loading
 import time
 import sys
 
-print ('\n\033[1;34;48m Weclcome to InfoTechCenter 4.0')
+print ('\n\033[1;33;40m Weclcome to InfoTechCenter 4.0')
 
 x = 0
 a = 0
@@ -28,4 +28,4 @@ while x != 20:
     if a == 4:
         a = 0
     if x == 20:
-        print ('\033[1;32;40m Done!')
+        print ('\n\n\033[1;32;40mMission Accomplished - Retina Scanned - Access Granted')

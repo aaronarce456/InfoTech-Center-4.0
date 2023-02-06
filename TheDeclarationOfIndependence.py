@@ -45,14 +45,22 @@ def gasLevelAlert():
         sleep(1)
         print("Calling Emergency Contact")
     elif gasLevelIndicator == "Low":
-        print("****Warning***")
+        print("****Warning****")
         sleep(1)
         print("Your gas tank is extremely low, checking Google Maps for the closest gas station.")
         sleep(1)
         print("The closest gas station is",listOfGasStations(),"which is",milesToGasStationLow,"miles away.")
-
-
-
+    elif gasLevelIndicator == "Quarter Tank":
+        print("***Warning***")
+        sleep(1)
+        print("Your gas tank is at a Quarter Tank and the closest gas station is",listOfGasStations(),"which is",milesToGasStationQuartTank,"miles away.")
+    elif gasLevelIndicator == "Half":
+        print("Your gas tank is a half of a tank which is plenty of gas to make it to your destination today")
+    elif gasLevelIndicator == "Three Quarter Tank":
+        print("Your gas tank is a three quarter of a tank which is "
+              "plenty of gas to make it to your destination today.")
+    else:
+        print("Your gas tank is full - Yeah! - Congratulations - Vroom Vroom.")
 
 
 gasLevelAlert()

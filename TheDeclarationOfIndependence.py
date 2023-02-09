@@ -3,7 +3,6 @@
 # Merged Welcome Screen and Gasoline Branches - Stable
 
 """
-<<<<<<< HEAD
 Our Welcome Screen will start our Program letting
 drivers know that the InfoTech Center 4.0 OS is loading
 """

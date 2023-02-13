@@ -87,7 +87,7 @@ def gasLevelAlert():
         print("Your gas tank is full - Yeah! - Congratulations - Vroom Vroom.")
 
 
-gasLevelAlert()
+
 # Programmer: Aaron Arce
 # Date: 2.8.2023
 # Program: Weather System Updates
@@ -128,4 +128,12 @@ def vRS():
         print("\nNWS is calling for",weatherAlert,"drive safely and have a wonderful day.")
 
 
+
+
+
+
+
+
+# Call functions here
 vRS()
+gasLevelAlert()

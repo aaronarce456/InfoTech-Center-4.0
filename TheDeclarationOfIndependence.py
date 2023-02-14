@@ -30,7 +30,7 @@ while x != 20:
     if a == 4:
         a = 0
     if x == 20:
-        print ('\n\n\033[1;32;40mMission Accomplished - Retina Scanned - Access Granted\n')
+        print ('\n\n\033[1;32;40mMission Accomplished - Retina Scanned - Access Granted')
 
 
 
@@ -111,21 +111,21 @@ weatherAlert = weather()
 def vRS():
     if weatherAlert == "Snowing":
         print("\nNWS has changed your Alarm by 15 minutes because of the weather forecast of",weatherAlert)
-        print("Your VRS has been engaged only allowing your vehicle to go 45 MPH.")
+        print("Your VRS has been engaged only allowing your vehicle to go 45 MPH.\n")
     elif weatherAlert == "Blizzard":
         print("\nNWS has changed your Alarm by 30 minutes because of the weather forecast of",weatherAlert)
-        print("Your VRS has been engaged only allowing your vehicle to go 35 MPH.")
+        print("Your VRS has been engaged only allowing your vehicle to go 35 MPH.\n")
     elif weatherAlert == "Rain":
-        print("\nNWS is calling for,",weatherAlert,"please drive extra carefully.")
+        print("\nNWS is calling for,",weatherAlert,"please drive extra carefully.\n")
     elif weatherAlert == "Foggy":
-        print("\nNWS is calling for",weatherAlert,"conditions, please drive extra careful.")
+        print("\nNWS is calling for",weatherAlert,"conditions, please drive extra careful.\n")
     elif weatherAlert == "Windy":
-        print("\nNWS is calling for",weatherAlert,"conditions, please drive extra careful.")
+        print("\nNWS is calling for",weatherAlert,"conditions, please drive extra careful.\n")
     elif weatherAlert == "Icy":
         print("\nNWS has changed your Alarm by 60 minutes because of the weather forecast of",weatherAlert)
-        print("Your VRS has been engaged only allowing your vehicle to go 25 MPH.")
+        print("Your VRS has been engaged only allowing your vehicle to go 25 MPH.\n")
     else:
-        print("\nNWS is calling for",weatherAlert,"drive safely and have a wonderful day.")
+        print("\nNWS is calling for",weatherAlert,"drive safely and have a wonderful day.\n")
 
 
 
@@ -135,5 +135,9 @@ def vRS():
 
 
 # Call functions here
+print("\nNational Weather Service is checking conditions....")
+sleep(2)
 vRS()
+print("Checking current gas levels...")
+sleep(2)
 gasLevelAlert()

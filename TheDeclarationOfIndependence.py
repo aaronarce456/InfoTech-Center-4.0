@@ -67,24 +67,24 @@ def gasLevelAlert():
     if gasLevelIndicator == "Empty":
         print("***WARNING YOU ARE ON EMPTY***")
         sleep(1)
-        print("Calling Emergency Contact")
+        print("Calling Emergency Contact\n")
     elif gasLevelIndicator == "Low":
         print("****Warning****")
         sleep(1)
-        print("Your gas tank is extremely low, checking Google Maps for the closest gas station.")
+        print("Your gas tank is extremely low, checking Google Maps for the closest gas station.\n")
         sleep(1)
-        print("The closest gas station is",listOfGasStations(),"which is",milesToGasStationLow,"miles away.")
+        print("The closest gas station is",listOfGasStations(),"which is",milesToGasStationLow,"miles away.\n")
     elif gasLevelIndicator == "Quarter Tank":
         print("***Warning***")
         sleep(1)
-        print("Your gas tank is at a Quarter Tank and the closest gas station is",listOfGasStations(),"which is",milesToGasStationQuartTank,"miles away.")
+        print("Your gas tank is at a Quarter Tank and the closest gas station is",listOfGasStations(),"which is",milesToGasStationQuartTank,"miles away.\n")
     elif gasLevelIndicator == "Half":
-        print("Your gas tank is a half of a tank which is plenty of gas to make it to your destination today")
+        print("Your gas tank is a half of a tank which is plenty of gas to make it to your destination today\n")
     elif gasLevelIndicator == "Three Quarter Tank":
         print("Your gas tank is a three quarter of a tank which is "
-              "plenty of gas to make it to your destination today.")
+              "plenty of gas to make it to your destination today.\n")
     else:
-        print("Your gas tank is full - Yeah! - Congratulations - Vroom Vroom.")
+        print("Your gas tank is full - Yeah! - Congratulations - Vroom Vroom.\n")
 
 
 
@@ -93,8 +93,7 @@ def gasLevelAlert():
 # Program: Weather System Updates
 
 
-# Import Libraries Here
-import random
+
 
 # Create a weather conditions in a list and choose it randomly
 def weather():
@@ -134,13 +133,7 @@ def vRS():
 
 
 
-# Call functions here
-print("\nNational Weather Service is checking conditions....")
-sleep(2)
-vRS()
-print("Checking current gas levels...")
-sleep(2)
-gasLevelAlert()
+
 # Date: 2.20.2023
 # Program: Infotech Center Upgrades
 
@@ -151,8 +144,7 @@ and shows that it is playing
 """
 
 
-# Libraries here
-import random
+
 
 
 def songs():
@@ -179,5 +171,40 @@ def songOn():
 
 
 
-songOn()
 
+
+
+# Date: 2.16.2023
+# Program: Infotech Center Upgrades
+
+"""
+We will make a function that shows contacts
+- Create a list of contacts
+-Print all contacts
+"""
+
+
+
+
+
+def contacts():
+    contactList = ["Mom","Dad","Brother","Sister","Grandma","Grandpa","Aunt","Uncle"]
+    currentContact = random.choice(contactList)
+    return currentContact
+
+
+
+
+
+
+# Call functions here
+print("\nNational Weather Service is checking conditions....")
+sleep(2)
+vRS()
+print("Checking current gas levels...")
+sleep(2)
+gasLevelAlert()
+sleep(2)
+songOn()
+sleep(2)
+print("\nAlert!", contacts(),"is calling.")

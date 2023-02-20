@@ -138,6 +138,7 @@ def vRS():
 # Program: Infotech Center Upgrades
 
 
+
 """
 We will make a function that chooses from multiple songs
 and shows that it is playing
@@ -196,6 +197,42 @@ def contacts():
 
 
 
+"""
+We will make a tempeerature function that changes with the temperature
+to the temperature ouside
+"""
+
+
+
+
+
+def temperature():
+    tempRangeList = ["10-30","-9","31-50","51-59","60-70","+70"]
+    currentTempRange = random.choice(tempRangeList)
+    return currentTempRange
+
+weatherTemp = temperature()
+
+
+
+
+def carTemp():
+    if weatherTemp == "10-30":
+        print("The car temperature has increased 15 degrees due to the colder temperature.\n")
+    elif weatherTemp == "-9":
+        print("The car temperature has increased by 20 degrees due to freezing temperature.\n")
+    elif weatherTemp == "31-50":
+        print("The car temperature has increased by 5 degrees due to temperature.\n")
+    elif weatherTemp == "51-59":
+        print("The car temperature has remained the same due to the temperature.\n")
+    elif weatherTemp == "60-70":
+        print("The car temperature has remained the same due to temperature.\n")
+    else:
+        print("The car temperature has decreased by 5 degrees due to temperature.\n")
+
+
+
+carTemp()
 
 # Call functions here
 print("\nNational Weather Service is checking conditions....")
@@ -204,6 +241,8 @@ vRS()
 print("Checking current gas levels...")
 sleep(2)
 gasLevelAlert()
+sleep(2)
+carTemp()
 sleep(2)
 songOn()
 sleep(2)
